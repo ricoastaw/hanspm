@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MyGame> 
+ <!-- Note(s):Max word: 22 -->
+ <Intro>
+ 	<dialog id='1' type="normal">
+		<line id='1' portrait='' mood='' pos='center'>Gunakan mouse untuk navigasi dan untuk melanjutan dialog gunakan klik kiri pada mouse atau tekan tombol "z" pada keyboard.</line>
+		<line id='2' portrait='' mood='' pos='center'>"Semangat Bermain!"</line>
+		<nextdialog >2</nextdialog>
+	</dialog>
+ 	<dialog id='2' type='question'>
+		<question id="1" pos="left" portrait="">"Apakah kamu mau melewati prolog game?"</question>
+			
+				 <buttons>
+					<button>
+					<answer id='1'>	YA </answer>
+					</button>
+				 </buttons>
+			
+		<nextdialog id='1'>8</nextdialog> 
+			<answer id='2'>Tidak</answer>
+		<nextdialog id='2'>3</nextdialog>
+	</dialog>
+	<dialog id='3' type="normal"> 
+			
+			<line id='1' portrait='' mood='' pos='center'>Langit cerah diiringi hembusan semilir angin.</line> 
+			<line id='2' portrait='' mood='' pos='center'>Dewa Siwa memberikan suatu amanah kepada Dewa Bayu. Tanpa pikir panjang Dewa Bayu menyanggupinya, kemudian ia bergegas menunaikan amanah tersebut.</line> 
+			<line id='3' portrait='' mood='' pos='center'> Disisi lain, Dewa Angin kebingungan akan dibawa kemana anugrah pembuahan dari pemberian Dewa Siwa itu akan 'disimpan'.</line> 
+			<line id='4' portrait='' mood='' pos='center'>Dewa Bayu melihat seseorang didekat hutan yang ia lewati</line> 
+			<line id='5' portrait='Dewa' mood='' pos='left'>"Salam, "</line> 
+			<line id='6' portrait='Anjani' mood='' pos='right'>"Salam Dewa."</line> 
+			<line id='7' portrait='Dewa' mood='' pos='left'>"Aku diutus oleh Dewa Siwa mencari seseorang untuk menerima ini dan kamu sepertinya makhluk yang tepat."</line> 
+			<line id='8' portrait='Anjani' mood='' pos='right'>"Bungkusan apakah ini, wahai Dewa?"</line>
+			<line id='9' pos='center'>Setelah memberi bungkusan tersebut, sang Dewa pun pergi meninggalkan Anjani begitu saja.</line>
+		<nextdialog>4</nextdialog>
+	</dialog>
+	<dialog id='4' type='question'>
+		<line id='1' portrait='' mood='' pos='right'>Aku penasaran dengan bungkusan ini</line> 
+		<question id='2' portrait='Anjani' mood='' pos='right'>"Apakah aku akan membukanya sekarang?"</question>
+			<answer id='1'>Ya</answer>
+		<nextdialog id='1'>5</nextdialog> 
+			<answer id='2'>Nanti</answer>
+		<nextdialog id='2'>6</nextdialog>
+	</dialog>
+	<dialog id='5' type="normal">
+			<line id='1' portrait='' mood='' pos='center'>Anjani membuka bungkusan tadi dan seketika tubuhnya bersinar.</line>
+			<line id='2' portrait='' mood='' pos='center'>Beberapa makhluk dari golongan Dewa, Iblis, dan Brahmana menyadari dan merasakan sesuatu yang akan terjadi...</line>
+			<line id='3' portrait='' mood='' pos='center'>...,dan seekor anak kera pun lahir.</line>
+		<nextdialog>8</nextdialog>
+	</dialog>
+	<dialog id='6' type="normal">
+			<line id='1' portrait='Anjani' mood='' pos='left'>"Ah, nanti saja."</line>
+			<line id='2' portrait='' mood='' pos='center'>Anjani melanjutkan aktivitasnya sembari bersenandung.</line>
+			<line id='3' portrait='Anjani' mood='' pos='left'>Hmmm~... hmm~... hmmm~....</line>
+		<nextdialog>7</nextdialog>
+	</dialog>
+	<dialog id='7' type="question">
+		<question id='1' portrait='Anjani' mood='' pos='right'>"Aku akan membukanya sekarang."</question>
+			<answer id='1'>Buka</answer>
+		<nextdialog id='1'>5</nextdialog>
+	</dialog>
+	<dialog id='8' type="end">
+	</dialog>	
+</Intro>
+<Forest><!-- Anjani dan Han -->
+	<dialog id='1' type="normal">
+		<line id='1' portrait='Anak Kera' mood='' pos='right'>"Aku lapar~"</line>
+		<line id='2' portrait='Anjani' mood='' pos='left'>"Makanlah semua buah yang berwarna merah."</line>
+		<line id='3' portrait='Anjani' mood='' pos='left'>"Jangan dekati makhluk api."</line>
+	</dialog>
+		<nextdialog>2</nextdialog>	
+	<dialog id='2' type="normal">
+		<line id='1' portrait='Anjani' mood='' pos='left'>"Untuk berlari tahan tombol 'shift' kemudian tombol arah pada keyboard."</line>
+		<line id='2' portrait='Anjani' mood='' pos='left'>"Hmmmm."</line>
+	</dialog>
+		<nextdialog>3</nextdialog>	
+	<dialog id='3' type="end">
+	</dialog>
+</Forest>
+	 <Maze>
+		<!-- Papan Penanda -->
+		<dialog id='1' type="normal">
+			<line id='1' portrait='' mood='' pos='center'>"Ikuti jejak rumput!"</line>
+			<line id='2' portrait='Anak Kera' mood='' pos='left'>"Ini pasti penting tapi apa peduliku, aku kan belum bisa baca. He-he"</line>
+		<nextdialog>2</nextdialog>
+		</dialog>
+		<dialog id='2' type="end">
+		</dialog>
+	</Maze>
+	<Maze1>
+		<dialog id='1' type="normal">
+			<line id='1' portrait='Pertapa' mood='' pos='left'>"KENAPA KAU MAKAN BUAH ITU?!"</line>
+			<line id='2' portrait='Anak Kera' mood='' pos='right'>"Kamu siapa? Aku lapar. Aku mau buah merah."</line>
+			<line id='3' portrait='' mood='' pos='center'>Pertapa itu pun bergumam.</line>
+			<line id='4' portrait='Pertapa' mood='' pos='left'>"Tidak mungkin makhluk biasa bisa melewati hutan ini dan menemuiku. Apakah ini makhluk yang Dewa utus kepada hamba untuk diberikan ajian?" </line>
+			<line id='5' portrait='Pertapa' mood='' pos='left'>"Nara-nara, seperti yang pernah Dewa katakan bahwa setelah bertapa selama 100 hari...."</line>
+			<line id='5' portrait='Pertapa' mood='' pos='left'>"...,seekor makhluk akan menghampiriku dan memakan buah pemberian dewa ini."</line>
+			<line id='6' portrait='Pertapa' mood='' pos='left'>"Ampuni hamba telah meragukan petunjukMu. Hamba akan laksanakan."</line>
+		<nextdialog>2</nextdialog>
+		</dialog>
+		<dialog id='2' type='question'>
+			<question id="1" pos="left" portrait="Pertapa">"Apakah kamu mau saya beri sesuatu?"</question>
+				<answer id='1'>Makan?</answer>
+			<nextdialog id='1'>3</nextdialog> 
+				<answer id='2'>Aku lapar</answer>
+			<nextdialog id='2'>3</nextdialog>
+		</dialog>
+		<dialog id='3' type="normal">
+			<line id='1' portrait='Pertapa'  pos='left'>"Iya benar, kamu akan temukan buah seperti itu disana."</line>
+			<line id='2' portrait='Anak Kera' mood='' pos='right'>"Cepat beritahu aku dimana tempatnya!"</line>
+			<line id='3' portrait='Pertapa' mood='' pos='left'>"Jalan menuju kesana akan penuh rintangan. Maka Saya akan mengajarkan kamu untuk menghalau ancaman."</line>
+			<line id='4' portrait='Anak Kera' mood='' pos='right'>"Baiklah. Cepat ajarkan aku." </line>
+			<line id='5' portrait='' mood='' pos='center'>"Pertapa itu mulai mengajarkan ajiannya."</line>
+			<line id='6' portrait='' mood='' pos='center'>"..."</line>
+			<line id='7' portrait='' mood='' pos='center'>"...."</line>
+			<line id='8' portrait='Anak Kera' mood='' pos='right'>"Aku paham sekarang."</line>
+			<line id='9' portrait='Pertapa' mood='' pos='left'>"Saya akan bertahan. Sekarang coba tekan tombol 'SPASI' pada keyboard."</line>
+			<line id='10' portrait='Pertapa' mood='' pos='left'>"Luar biasa. Aku rasa kamu sudah siap. Kamu bisa pergi sekarang dan aku akan memberikan kendaraan untuk mencapai tempat tujuanmu."</line>
+		<nextdialog>4</nextdialog> 
+		</dialog>
+		<dialog id='4' type="end">
+		</dialog>
+	</Maze1>
+	<Boss>
+		<dialog id='1' type="normal">
+			<line id='1' portrait='Rakshasha' pos='left'>"Makhluk yang berasal dari bumi adalah milik bumi."</line>
+			<line id='2' portrait='Rakshasha' pos='left'>"Makhluk langit lebih dari segalanya."</line>
+			<line id='3' portrait='Rakshasha' pos='left'>"Kau bukan makhluk langit tapi bagaimana kau sampai disini?!"</line>
+			<line id='4' portrait='Anak Kera' pos='right'>"Aku lagi mau buah itu."</line>
+			<line id='5' portrait='Rakshasha' pos='left'>"Tidak. Aku perlu 100 hari bertapa dan memuja dewa untuk mendapatkan buah ini."</line>
+			<line id='6' portrait='Rakshasha' pos='left'>"Aku telah bertapa selama 30 hari di dalam gua, 30 hari di puncak gunung berapi, 30 hari di air terjun...."</line>
+			<line id='6' portrait='Rakshasha' pos='left'>"...,dan 10 hari terakhir di hutan labirin. Lalu salah satu dewa akan mengirimkan buah ini."</line>
+			<line id='7' portrait='Anak Kera' pos='left'>"Aku tidak peduli. Kau akan memberiku buah itu kalau tidak kau akan rasakan ajianku ini!"</line>
+			<line id='8' portrait='' pos='center'>Anak kera itu berhasil membuat murka Rakshasha agung dan pertarungan pun tidak terhindarkan.</line>
+		<nextdialog>2</nextdialog>
+		</dialog>	
+		<dialog id='2' type="end">
+		</dialog>
+	</Boss>
+	<Epilog>
+		<dialog id='1' type="normal">
+			<line id='1' portrait='' pos='center'>Sang anak kera tidak bisa menang melawan Rakshasha. Ia jatuh terkapar. Saat Rakshasha ingin memberikan serangan pamungkasnya tiba-tiba....</line>
+			<line id='2' portrait='' pos='center'>...,tubuh Rakshasha merasakan suatu kengerian amat hebat. Benar, hal yang dirasakan beberapa makhluk dari golongan Dewa, Iblis, dan Brahmana terjadi.</line>
+			<line id='3' portrait='' pos='center'>Wajah anak kera itu memerah dan tubuhnya  mulai membesar. Dengan membabi buta Rakshasha menyerang anak kera yang terus membesar dan semakin besar....</line>
+			<line id='3' portrait='' pos='center'>...,tetapi tidak ada efeknya. </line>
+			<line id='4' portrait='' pos='center'>Aura disekitarnya mulai berubah.</line>
+			<line id='5' portrait=''  pos='center'>Tubuh sang anak kera yang sedang tantrum pun masih terus membesar dan semakin besar, istana langit Rakshasha porak poranda.</line>
+			<line id='6' portrait=''  pos='center'>Sang anak kera pun melihat ke arah barat dan matanya tertuju pada matahari sore....</line>
+			<line id='7' portrait='' pos='center'>...sang anak kera yang tubuhnya sudah sebesar bumi itu pun terbang mendekati matahari. Kemudian ia membuka lebar mulutnya dan secara perlahan menelan matahari itu.</line>
+			<line id='8' portrait='' pos='center'>Miris, ia telah menelan habis matahari. Akibatnya semua makhluk di permukaan Bumi yang bergantung hidup pada matahari tewas satu per satu.</line>
+			<line id='9' portrait='' pos='center'>Dewa Indra murka, ia menyerang dengan Vajra-nya yang kemudian mengenai rahang sang anak kera.</line>
+			<line id='10' portrait='' pos='center'>Anak kera itu sontak memuntahkan matahari dan terpental ke Bumi dengan tubuhnya yang telah kembali seperti semula.</line>
+			<line id='11' portrait='' pos='center'>Dari peristiwa itu, sang anak kera diberi nama "HAN" yang berarti rahang.</line>
+			<line id='12' portrait='' pos='left'>"Swayam ke maan ka hanan kar, yani swayam ke maan ki parwah Na kar, swami bhakti karana ka naam he Han"</line>
+			<nextdialog>2</nextdialog>	
+		</dialog>
+			
+		<dialog id='2' type="end">
+		</dialog>
+	</Epilog>
+
+</MyGame>
